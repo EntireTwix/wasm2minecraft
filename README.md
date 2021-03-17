@@ -28,7 +28,7 @@ wasm2lua --pureLua -b funcs.idl --libmode funcs.wasm funcs.lua
 
 ## Known Bugs with fixes:
 * .env calls are nil
-  * define the needed function in env.lua
+  * define the needed function in env_funcs.lua
 
 * bit is nil
   * wget https://github.com/daurnimator/lua-http/blob/master/http/bit.lua
