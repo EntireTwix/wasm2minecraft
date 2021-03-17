@@ -7,6 +7,4 @@ _Znwm = function(size) return 0 end,
 _Znwj = function(size) return 0 end
 }
 
---lua dumb
-local all = { env = env } 
-return all
+return { env = env } 
