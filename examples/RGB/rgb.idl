@@ -1,7 +1,7 @@
 interface RGB
 {
     void RGB();
-    void RGB([ ToWASMOwned, Value ] octet r, [ ToWASMOwned, Value ] octet g, [ ToWASMOwned, Value ] octet b);
+    void RGB([Value] octet r, [Value] octet g, [Value] octet b);
     attribute octet r;
     attribute octet g;
     attribute octet b;
