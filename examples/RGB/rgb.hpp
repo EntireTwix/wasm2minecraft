@@ -1,7 +1,7 @@
 struct RGB
 {
     RGB() {}
-    RGB(byte r, byte g, byte b) : r(r), g(g), b(b) {}
+    RGB(uint8_t r, uint8_t g, uint8_t b) : r(r), g(g), b(b) {}
 
-    byte r, g, b;
+    uint8_t r, g, b;
 };
