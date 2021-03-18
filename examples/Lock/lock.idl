@@ -1,0 +1,6 @@
+interface Lock
+{
+    void Lock([Value] unsigned short pin);
+    boolean Get();
+    boolean Set([Value] unsigned short pin, [Value] boolean new_state);
+};
