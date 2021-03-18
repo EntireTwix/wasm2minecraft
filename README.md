@@ -36,7 +36,7 @@ wasm2lua --pureLua -b funcs.idl --libmode funcs.wasm funcs.lua
 
 - bit is nil
 
-  - wget https://github.com/daurnimator/lua-http/blob/master/http/bit.lua
+  - wget https://raw.githubusercontent.com/daurnimator/lua-http/master/http/bit.lua
 
     then replace
 
