@@ -27,6 +27,7 @@ wasm2lua --pureLua -b funcs.idl --libmode funcs.wasm funcs.lua
 - test your header file before usage
 - check out https://github.com/SwadicalRag/wasm2lua/blob/master/HOWTO-BINDINGS.md
 - check out https://heycam.github.io/webidl/#introduction
+- make sure to initilize your member variables
 
 ## Known Bugs with fixes:
 
