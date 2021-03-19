@@ -49,9 +49,13 @@ wasm2lua --pureLua -b funcs.idl --libmode funcs.wasm funcs.lua
     ```lua
     local bit = require "bit"
     ```
+    if that fails
+    ```lua
+    local bit = bit32
+    ```
 
 - labels bug out
   - your lua version is too old
 
-* return by value is buggy
+- return by value is buggy
   - just return without [Value] tag and itll still be as value
