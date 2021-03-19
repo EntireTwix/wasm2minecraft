@@ -2,7 +2,7 @@ struct Lock
 {
 private:
     uint16_t pin;
-    bool state;
+    bool state = false;
 
 public:
     Lock() = delete;
