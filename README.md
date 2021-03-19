@@ -59,3 +59,18 @@ wasm2lua --pureLua -b funcs.idl --libmode funcs.wasm funcs.lua
 
 - return by value is buggy
   - just return without [Value] tag and itll still be as value
+
+- function __BINDER__.instantiateClass(classBase,ptr,luaOwned) issues
+  - replace with
+  ```lua
+  function __BINDER__.instantiateClass(classBase,ptr,luaOwned)
+    local ins = setmetatable({__ptr = ptr,__luaOwned = luaOwned},classBase)
+    ins.__gcproxy = {}
+    if ins:__gc() ~= nil then
+      getmetatable(ins.__gcproxy).__gc = function() ins:__gc() end
+    end
+    classBase.__cache[ptr] = ins
+    return ins
+  end
+  ```
+  
