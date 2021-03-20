@@ -14,7 +14,7 @@
 lua-webidl --libmode --cpp funcs.idl funcs.cpp
 ```
 
-5)use a site like https://mbebenita.github.io/WasmExplorer/ or locally compile your .cpp to WAT
+5)use a site like https://mbebenita.github.io/WasmExplorer/ or https://wasdk.github.io/WasmFiddle/ or locally compile your .cpp to WAT
 
 6)use the WASM (WAT) file and bindings to generate the lua file with wasm2lua
 
