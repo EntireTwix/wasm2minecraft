@@ -59,7 +59,7 @@ wasm2lua --pureLua -b funcs.idl --libmode funcs.wasm funcs.lua
   - your lua version is too old
 
 - return by value is buggy
-  - just return without [Value] tag and itll still be as value
+  - only use [Value] Tag for non-user defined types
 
 - function __BINDER__.instantiateClass(classBase,ptr,luaOwned) issues
   - replace with
