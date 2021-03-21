@@ -28,6 +28,7 @@ wasm2lua --pureLua -b funcs.idl --libmode funcs.wasm funcs.lua
 - check out https://github.com/SwadicalRag/wasm2lua/blob/master/HOWTO-BINDINGS.md
 - check out https://heycam.github.io/webidl/#introduction
 - make sure to initilize your member variables
+- if you dont need any bindings for classes simply do step 1, 5, then ```wasm2lua --pureLua funcs.wasm funcs.lua```
 
 ## Known Bugs with fixes:
 
