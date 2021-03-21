@@ -3,5 +3,6 @@
 #define uint16_t unsigned short
 #define uint32_t unsigned
 #define uint64_t unsigned long
+#define any void *
 
 //put code here
