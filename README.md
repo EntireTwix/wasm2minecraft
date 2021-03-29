@@ -56,7 +56,7 @@ wasm2lua --pureLua -b funcs.idl --libmode funcs.wasm funcs.lua
 
 - function __BINDER__.instantiateClass(classBase,ptr,luaOwned) issues
   
-replace with
+  replace with
   ```lua
   function __BINDER__.instantiateClass(classBase,ptr,luaOwned)
     local ins = setmetatable({__ptr = ptr,__luaOwned = luaOwned},classBase)
