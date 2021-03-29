@@ -50,7 +50,7 @@ wasm2lua --pureLua -b funcs.idl --libmode funcs.wasm funcs.lua
     ```lua
     local bit = require "bit"
     ```
-    if that fails
+  - if that fails
     ```lua
     local bit = bit32
     ```
