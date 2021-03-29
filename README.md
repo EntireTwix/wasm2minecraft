@@ -1,4 +1,4 @@
-### Disclaimer: Only works with Lua 5.2+
+### Disclaimer: Only works with Lua 5.2+ and requires wasm2lua: https://github.com/SwadicalRag/wasm2lua
 
 # Steps
 
