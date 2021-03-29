@@ -7,12 +7,11 @@
 2)write your webidl interface
 
 3)use lua-webidl to generate cpp code
-
-4)append your .hpp code to the top of your generated .cpp file
-
 ```
 lua-webidl --libmode --cpp funcs.idl funcs.cpp
 ```
+
+4)append your .hpp code to the top of your generated .cpp file
 
 5)use a site like https://mbebenita.github.io/WasmExplorer/ or https://wasdk.github.io/WasmFiddle/ or locally compile your .cpp to WAT
 
