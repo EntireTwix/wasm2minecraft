@@ -33,7 +33,7 @@ wasm2lua --pureLua -b funcs.idl --libmode funcs.wasm funcs.lua
 
 - .env calls are nil
 
-  - define the needed function in env_funcs.lua
+  define the needed function in env_funcs.lua
 
 - bit is nil
     then replace
@@ -47,13 +47,16 @@ wasm2lua --pureLua -b funcs.idl --libmode funcs.wasm funcs.lua
     ```
 
 - labels bug out
-  - your lua version is too old
+
+  your lua version is too old
 
 - return by value is buggy
-  - only use [Value] Tag for non-user defined types
+
+  only use [Value] Tag for non-user defined types
 
 - function __BINDER__.instantiateClass(classBase,ptr,luaOwned) issues
-  - replace with
+  
+replace with
   ```lua
   function __BINDER__.instantiateClass(classBase,ptr,luaOwned)
     local ins = setmetatable({__ptr = ptr,__luaOwned = luaOwned},classBase)
