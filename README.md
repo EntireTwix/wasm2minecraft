@@ -41,7 +41,7 @@ wasm2lua --pureLua -b funcs.idl --libmode funcs.wasm funcs.lua
     ```lua
     local bit = bit
     ```
-
+with
     ```lua
     local bit = bit32
     ```
