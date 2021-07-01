@@ -9,4 +9,4 @@ module.setImports(env_funcs)
 --module.bindings.ClassName()
 
 --functions
---module.exports.Func()
+--module.bindings.namespace.Func()
