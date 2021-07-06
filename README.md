@@ -37,15 +37,15 @@ wasm2lua --pureLua -b funcs.idl --libmode funcs.wasm funcs.lua
 
 - bit is nil
     then replace
-
-    ```lua
+```lua
     local bit = bit
-    ```
+```
+
 with
 
-    ```lua
+```lua
     local bit = bit32
-    ```
+```
 
 - labels bug out
 
