@@ -69,3 +69,9 @@ with
     return ins
   end
   ```
+  
+ - `__MALLOC__`, replace with
+ ```lua
+ local __MALLOC__ = function() error "undefined is not defined" end
+ local __FREE__ = function() error "undefined is not defined" end
+ ```
