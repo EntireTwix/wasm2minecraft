@@ -18,7 +18,7 @@ lua-webidl --libmode --cpp funcs.idl funcs.cpp
 6)use the WASM (WAT) file and bindings to generate the lua file with wasm2lua
 
 ```
-wasm2lua --pureLua -b funcs.idl --libmode funcs.wasm funcs.lua
+wasm2lua --pureLua -b funcs.idl --libmode funcs.wasm funcs.lua --discardExportSymbols
 ```
 
 ## Tips:
