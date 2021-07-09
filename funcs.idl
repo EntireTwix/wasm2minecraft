@@ -1,0 +1,5 @@
+namespace global
+{
+    void memset([Array] byte loc, [ArrayLength = "loc"] any size, byte val);
+    void memcpy([Array] byte a, [ArrayLength = "a"] any size, [Array] byte b);
+};
