@@ -1,3 +1,5 @@
+#include <stdint.h>
+
 struct Lock
 {
 private:
