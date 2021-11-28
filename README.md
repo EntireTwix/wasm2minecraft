@@ -35,18 +35,6 @@ wasm2lua --pureLua -b funcs.idl --libmode funcs.wasm funcs.lua --discardExportSy
 
   define the needed function in env_funcs.lua
 
-- bit is nil
-    then replace
-  ```lua
-  local bit = bit
-  ```
-
-  with
-
-  ```lua
-  local bit = bit32
-  ```
-
 - labels bug out
 
   your lua version is too old
