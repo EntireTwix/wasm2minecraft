@@ -5,7 +5,7 @@
 #define any void *
 
 template <typename T>
-void lua_memset(T *ptr, int val, size_t sz)
+void lua_memset(T *ptr, T val, size_t sz)
 {
     for (size_t i = 0; i < sz; ++i)
     {
