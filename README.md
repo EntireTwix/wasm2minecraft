@@ -18,7 +18,7 @@ lua-webidl --libmode --cpp funcs.idl funcs.cpp
 6)use the WASM (WAT) file and bindings to generate the lua file with wasm2lua
 
 ```
-wasm2lua --pureLua -b funcs.idl --libmode funcs.wasm funcs.lua --discardExportSymbols
+wasm2lua --pureLua -b funcs.idl --libmode funcs.wasm funcs.lua --discardExportSymbols -m 3
 ```
 
 ## Tips:
@@ -27,7 +27,7 @@ wasm2lua --pureLua -b funcs.idl --libmode funcs.wasm funcs.lua --discardExportSy
 - check out https://github.com/SwadicalRag/wasm2lua/blob/master/HOWTO-BINDINGS.md
 - check out https://heycam.github.io/webidl/#introduction
 - make sure to initilize your member variables
-- if you dont need any bindings for classes simply do step 1, 5, then ```wasm2lua --pureLua funcs.wasm funcs.lua --discardExportSymbols```, heavily consider wrapping in `extern "C" { }` for simplicity
+- if you dont need any bindings for classes simply do step 1, 5, then ```wasm2lua --pureLua funcs.wasm funcs.lua --discardExportSymbols -m 3```, heavily consider wrapping in `extern "C" { }` for simplicity
 
 ## Known Bugs with fixes:
 
