@@ -5,8 +5,11 @@ module.setImports(env_funcs)
 
 --put code here
 
---object 
+--object (bindings)
 --module.bindings.ClassName()
 
---functions
+--global funcs (bindings)
 --module.bindings.namespace.Func()
+
+--global funcs (non bindings)
+--module.exports.Func()
