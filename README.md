@@ -37,15 +37,15 @@ wasm2lua --pureLua -b funcs.idl --libmode funcs.wasm funcs.lua --discardExportSy
 
 - bit is nil
     then replace
-```lua
-    local bit = bit
-```
+  ```lua
+  local bit = bit
+  ```
 
-with
+  with
 
-```lua
-    local bit = bit32
-```
+  ```lua
+  local bit = bit32
+  ```
 
 - labels bug out
 
@@ -70,8 +70,8 @@ with
   end
   ```
   
- - `__MALLOC__`, replace with
- ```lua
- local __MALLOC__ = function() return 0 end
- local __FREE__ = function() end
- ```
+- `__MALLOC__`, replace with
+  ```lua
+  local __MALLOC__ = function() return 0 end
+  local __FREE__ = function() end
+  ```
