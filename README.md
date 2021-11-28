@@ -1,5 +1,5 @@
 ### Disclaimer: Only works with Lua 5.2+ and requires wasm2lua: https://github.com/SwadicalRag/wasm2lua
-
+### Disclaimer 2: I did not make wasm2lua, this repo is simply explicit setup/tips for OpenComputers mod 
 # Steps
 
 1)write your header
