@@ -5,6 +5,10 @@ local env = {
     --new operator (C++)
     _Znwm = function(size) return 0 end,
     _Znwj = function(size) return 0 end,
-    }
     
+    --new arrays (C++)
+    _Znaj = function(size) return 0 end,
+    _Znam = function(size) return 0 end,
+}
+
     return { env = env } 
