@@ -28,7 +28,7 @@ wasm2lua --pureLua -b funcs.idl --libmode funcs.wasm funcs.lua --discardExportSy
 - check out https://heycam.github.io/webidl/#introduction
 - make sure to initilize your member variables
 - if you dont need any bindings for classes simply do step 1, 5, then ```wasm2lua --pureLua funcs.wasm funcs.lua --discardExportSymbols```, heavily consider wrapping C functions in `extern "C" { }` for simplicity
-- if you're using bindings, `INLINE` all functions 
+- if you're using bindings, `INLINE` all functions that are going to be bound
 
 ## Known Bugs with fixes:
 
