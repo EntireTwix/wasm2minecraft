@@ -1,7 +1,7 @@
 #include <cstdint>
 #include <cstddef>
 
-#define INLINE __attribute__((always_inline)) inline
+#define INLINE constexpr
 #define any void *
 
 extern "C"
