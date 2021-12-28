@@ -30,6 +30,7 @@ wasm2lua --pureLua -b funcs.idl --libmode test.wasm funcs.lua --discardExportSym
 - if you dont need any bindings for classes simply do step 1, 5, then ```wasm2lua --pureLua test.wasm funcs.lua --discardExportSymbols```, heavily consider wrapping C functions in `extern "C" { }` for simplicity
 - if you're using bindings, `INLINE` all functions that are going to be bound before pasting into the generated `funcs.cpp`
 - pure lua defined env functions should be defined in `env_funcs.lua` where as functions requiring wasm2lua functions should be defined in `intrinsics.lua`
+- check out the [current example](examples/current)
 
 ## Known Bugs with fixes:
 
