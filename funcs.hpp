@@ -6,24 +6,12 @@
 
 extern "C"
 {
-    static void* wasm_memcpy(void *to, const void *from, size_t sz)
-    {
-        char* cto = (char*)to;
-        char* cfrom = (char*)from;
-        for (size_t i = 0; i < sz; ++i)
-        {
-            cto[i] = cfrom[i];
-        }
-        return to;
-    }
-    
-    static size_t wasm_strlen(const char *start)
-    {
-        const char *end = start;
-        for (; *end != '\0'; ++end)
-            ;
-        return end - start;
-    }
+    // extern put environmentally defined function here
+    extern void wasm_set(char* ptr, char value, size_t pos);
+    extern char wasm_get(const char* ptr, size_t pos);
+    extern void* memset(void *ptr, int value, size_t num);
+    extern void* memcpy(void *to, const void *from, size_t sz);
+    extern size_t strlen(const char *start);
 }
 
 // put code here or in the above extern if you want C function symbols
