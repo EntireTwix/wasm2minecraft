@@ -11,3 +11,5 @@ print(a:Get())
 
 print(module.bindings.global.Answer())
 print(module.exports.True())
+
+print(module.imports.env.Yo())

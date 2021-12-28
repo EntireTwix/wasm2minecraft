@@ -1,5 +1,5 @@
 local env = {
-    -- put the funcs you need here
+    Yo = function() return "Yo" end
 }
 
 return { env = env } 
