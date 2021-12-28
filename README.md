@@ -60,7 +60,7 @@ wasm2lua --pureLua -b funcs.idl --libmode test.wasm funcs.lua --discardExportSym
   end
   ```
   
-- `__MALLOC__`, replace with
+- `__MALLOC__`, replace `__MALLOC__` and `__FREE__` with
   ```lua
   local heap_start = 0
   local __MALLOC__ = function(size) 
@@ -68,5 +68,5 @@ wasm2lua --pureLua -b funcs.idl --libmode test.wasm funcs.lua --discardExportSym
     heap_start = heap_start + size + 1
     return temp
   end
-  local __FREE__ = function() return end
+  local __FREE__ = function() end
   ```
