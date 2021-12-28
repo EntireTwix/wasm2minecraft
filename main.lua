@@ -2,6 +2,7 @@ local module = require "funcs"
 local env_funcs = require "env_funcs"
 
 module.setImports(env_funcs)
+module.init()
 
 --put code here
 
@@ -13,3 +14,6 @@ module.setImports(env_funcs)
 
 --global funcs (non bindings)
 --module.exports.Func()
+
+--imports
+--module.imports.Func()
