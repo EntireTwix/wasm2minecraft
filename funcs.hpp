@@ -6,7 +6,7 @@
 
 extern "C"
 {
-    void* lua_memcpy(void *to, const void *from, size_t sz)
+    void* wasm_memcpy(void *to, const void *from, size_t sz)
     {
         char* cto = (char*)to;
         char* cfrom = (char*)from;
@@ -17,7 +17,7 @@ extern "C"
         return to;
     }
     
-    size_t lua_strlen(const char *start)
+    size_t wasm_strlen(const char *start)
     {
         const char *end = start;
         for (; *end != '\0'; ++end)
