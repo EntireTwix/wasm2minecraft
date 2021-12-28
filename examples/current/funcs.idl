@@ -1,0 +1,11 @@
+namespace global
+{
+    long Answer();
+};
+
+interface Example
+{
+    void Example();
+    void Toggle();
+    boolean Get();
+};
