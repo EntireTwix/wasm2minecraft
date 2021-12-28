@@ -6,7 +6,7 @@
 
 extern "C"
 {
-    void* wasm_memcpy(void *to, const void *from, size_t sz)
+    static void* wasm_memcpy(void *to, const void *from, size_t sz)
     {
         char* cto = (char*)to;
         char* cfrom = (char*)from;
@@ -17,7 +17,7 @@ extern "C"
         return to;
     }
     
-    size_t wasm_strlen(const char *start)
+    static size_t wasm_strlen(const char *start)
     {
         const char *end = start;
         for (; *end != '\0'; ++end)
@@ -26,4 +26,4 @@ extern "C"
     }
 }
 
-// put code here
+// put code here or in the above extern if you want C function symbols
