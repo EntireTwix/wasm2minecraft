@@ -2,12 +2,11 @@
 #include <cstddef>
 #include <cstring>
 
-#define INLINE constexpr
 #define any void *
 
 extern "C"
 {
-    // extern put environmentally defined function here
+    // put environmentally defined function as extern here
     extern void wasm_set(char* ptr, char value, size_t pos);
     extern char wasm_get(const char* ptr, size_t pos);
     extern void* memset(void *ptr, int value, size_t num);
